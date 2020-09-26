@@ -1,0 +1,132 @@
+#img-slider-con{
+  width: 1442px;
+  text-align: center;
+  display: block;
+  margin: auto;
+  padding-bottom: 20px;
+  border: 3px solid #ccc;
+}
+
+.container {
+  padding: 10px 1px;
+  background-color:#ccc;
+  margin: auto;
+   overflow: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.img-slide{
+  display: inline-block;   
+  border: 2px solid;
+  margin-right: 5px;
+  margin-left: 5px;
+  position: relative; 
+}
+
+.dots-arrows, .container{ 
+  -moz-user-select: none; 
+  -webkit-user-select: none; 
+  -ms-user-select:none; 
+  user-select:none;-o-user-select:none;
+}
+
+.dots-arrows {
+  margin-top: 30px;
+  text-align: center;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.dot{
+  font-size: 3.5em;
+}
+
+.dot:hover{
+  cursor: pointer;
+}
+
+.dotActive{
+  color: #006699;
+}
+
+/* Right Arrow */
+#right-arr{
+  font-size: 2em;
+  cursor: pointer;
+  margin-left: 30px;
+  background-color: #ccc;
+  padding: 10px 20px;
+  border-radius: 50%;
+}
+
+#left-arr{
+  font-size: 2em;
+  cursor: pointer;
+  margin-right: 30px;
+  padding: 10px 20px;
+  border-radius: 50%;
+  background-color: #ccc;
+  
+}
+
+#left-arr:disabled,
+#left-arr[disabled]{
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+
+#left-arr:disabled:hover,
+#left-arr[disabled]:hover{
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+
+#right-arr:hover, #left-arr:hover{
+  color: #006699;
+  ;
+}
+
+.slide-actives{
+  filter:opacity(30%);
+}
+
+.slide-hiddens{
+  filter:opacity(1%);
+}
+
+.slide-controler{
+  font-family:  Tahoma;
+  font-size: 0.9em;
+  margin: 40px auto;
+  width: 1442px;
+}
+
+.c1 {
+  margin-right: 20px;
+}
+
+.c1 input{
+  width: 30px;
+  text-align: center;
+  font-weight: 700;
+  color: #006699;
+}
+
+/* input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+} */
+
+@media only screen and (max-width: 769px){
+  .slide-controler {
+    display: none;
+  }
+  #img-slider-con{
+    margin-top: 40px;
+  }
+}
